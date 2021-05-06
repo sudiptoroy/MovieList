@@ -3,6 +3,7 @@ iOS Developer test Project. The app shows different types of movies and has sear
 
 ## Requirements
 * Xcode 11.5 or later
+* iOS 13 or later
 * Swift 5
 * Codoapods
 
