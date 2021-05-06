@@ -8,6 +8,7 @@ iOS Developer test Project. The app shows different types of movies and has sear
 
 
 ## How to run
+* Clone the project
 * Navigate to the project from terminal
 * Intall pods with `pod install`
 * Open project by `.xcworkspace`
