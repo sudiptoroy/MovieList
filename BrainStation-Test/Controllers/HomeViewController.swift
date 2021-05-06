@@ -31,6 +31,8 @@ class HomeViewController: UIViewController {
     // MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
+        searchBar.delegate = self
         self.tableViewSetup()
         fetchMovieList(query: "marvel")
         self.setupUI()
@@ -123,5 +125,18 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+}
+
+
+
+
+extension HomeViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("Search: \(self.searchBar.text ?? "")")
+        self.searchBar.endEditing(true)
+        let query = self.searchBar.text ?? ""
+        self.fetchMovieList(query: query)
     }
 }
