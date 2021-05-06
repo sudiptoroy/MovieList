@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,8 @@
 		A34E652F264443890065BB91 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E652E264443890065BB91 /* Movie.swift */; };
 		A34E6531264444D30065BB91 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6530264444D30065BB91 /* NetworkService.swift */; };
 		A34E6533264445120065BB91 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E6532264445120065BB91 /* Constants.swift */; };
+		A34E653526445E4B0065BB91 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E653426445E4B0065BB91 /* Alert.swift */; };
+		A34E653726445E7E0065BB91 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E653626445E7E0065BB91 /* LoadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		A34E652E264443890065BB91 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		A34E6530264444D30065BB91 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		A34E6532264445120065BB91 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A34E653426445E4B0065BB91 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		A34E653626445E7E0065BB91 /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
 		C4743A0685AA9BDAA42D8BDE /* Pods_BrainStation_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainStation_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1200D8AF7A58634F49A4989 /* Pods-BrainStation-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainStation-Test.debug.xcconfig"; path = "Target Support Files/Pods-BrainStation-Test/Pods-BrainStation-Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +103,6 @@
 				D1200D8AF7A58634F49A4989 /* Pods-BrainStation-Test.debug.xcconfig */,
 				8D862D68DABEBDD4D7D604BD /* Pods-BrainStation-Test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,11 +135,9 @@
 				A34E64EB26442EC40065BB91 /* AppDelegate.swift */,
 				A34E64ED26442EC40065BB91 /* SceneDelegate.swift */,
 				A34E651E26442F5D0065BB91 /* Services */,
-				A34E651F26442F6C0065BB91 /* Helpers */,
 				A34E652226442F860065BB91 /* Models */,
 				A34E652126442F7D0065BB91 /* Views */,
 				A34E652026442F740065BB91 /* Controllers */,
-				A34E652426442FBB0065BB91 /* Resources */,
 				A34E652326442F8F0065BB91 /* Supporting Files */,
 				A34E64F726442EC90065BB91 /* Assets.xcassets */,
 				A34E64F426442EC40065BB91 /* BrainStation_Test.xcdatamodeld */,
@@ -170,13 +171,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		A34E651F26442F6C0065BB91 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		A34E652026442F740065BB91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,15 +201,10 @@
 			children = (
 				A34E64FC26442EC90065BB91 /* Info.plist */,
 				A34E6532264445120065BB91 /* Constants.swift */,
+				A34E653426445E4B0065BB91 /* Alert.swift */,
+				A34E653626445E7E0065BB91 /* LoadImage.swift */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A34E652426442FBB0065BB91 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		A34E652526442FD50065BB91 /* Storyboards */ = {
@@ -419,6 +408,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A34E653526445E4B0065BB91 /* Alert.swift in Sources */,
+				A34E653726445E7E0065BB91 /* LoadImage.swift in Sources */,
 				A34E64EC26442EC40065BB91 /* AppDelegate.swift in Sources */,
 				A34E64EE26442EC40065BB91 /* SceneDelegate.swift in Sources */,
 				A34E652F264443890065BB91 /* Movie.swift in Sources */,
