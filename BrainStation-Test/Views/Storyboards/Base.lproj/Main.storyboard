@@ -10,7 +10,7 @@
         <!--Movie-->
         <scene sceneID="lAj-Hv-VFo">
             <objects>
-                <viewController id="1Ep-PI-sia" customClass="HomeViewController" customModule="BrainStation_Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Ep-PI-sia" customClass="HomeViewController" customModule="MovieList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rym-Jh-3Qe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,10 +19,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bBx-H7-BJQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <rect key="frame" x="0.0" y="56" width="414" height="718"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieListTableViewCell" rowHeight="150" id="NGa-fX-3yd" customClass="MovieListTableViewCell" customModule="BrainStation_Test" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieListTableViewCell" rowHeight="150" id="NGa-fX-3yd" customClass="MovieListTableViewCell" customModule="MovieList" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NGa-fX-3yd" id="Pe8-XU-2Rr">
@@ -98,29 +98,44 @@
                                             <outlet property="delegate" destination="1Ep-PI-sia" id="J1b-tr-txB"/>
                                         </connections>
                                     </tableView>
+                                    <searchBar contentMode="redraw" placeholder="Search Movies" translatesAutoresizingMaskIntoConstraints="NO" id="qFG-eY-4p3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="bBx-H7-BJQ" secondAttribute="bottom" id="0Uw-CJ-IHI"/>
+                                    <constraint firstItem="bBx-H7-BJQ" firstAttribute="top" secondItem="qFG-eY-4p3" secondAttribute="bottom" id="99m-sD-FYw"/>
+                                    <constraint firstItem="qFG-eY-4p3" firstAttribute="top" secondItem="8t8-F5-dmd" secondAttribute="top" id="G7e-gJ-Ewr"/>
+                                    <constraint firstAttribute="trailing" secondItem="qFG-eY-4p3" secondAttribute="trailing" id="WO7-xj-48y"/>
                                     <constraint firstAttribute="trailing" secondItem="bBx-H7-BJQ" secondAttribute="trailing" id="YlQ-09-0Eb"/>
+                                    <constraint firstItem="qFG-eY-4p3" firstAttribute="leading" secondItem="8t8-F5-dmd" secondAttribute="leading" id="aDA-li-Zme"/>
                                     <constraint firstItem="bBx-H7-BJQ" firstAttribute="leading" secondItem="8t8-F5-dmd" secondAttribute="leading" id="c0n-Os-zEy"/>
-                                    <constraint firstItem="bBx-H7-BJQ" firstAttribute="top" secondItem="8t8-F5-dmd" secondAttribute="top" id="gS7-Pi-UNU"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="hvt-0o-6lK">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8t8-F5-dmd" firstAttribute="top" secondItem="Ihf-7f-3KH" secondAttribute="top" id="6Ti-u0-9jY"/>
                             <constraint firstItem="Ihf-7f-3KH" firstAttribute="bottom" secondItem="8t8-F5-dmd" secondAttribute="bottom" id="K13-G7-eF4"/>
+                            <constraint firstItem="hvt-0o-6lK" firstAttribute="centerY" secondItem="Rym-Jh-3Qe" secondAttribute="centerY" id="K5t-FV-jGo"/>
                             <constraint firstItem="Ihf-7f-3KH" firstAttribute="trailing" secondItem="8t8-F5-dmd" secondAttribute="trailing" id="ZQc-C2-m6x"/>
+                            <constraint firstItem="hvt-0o-6lK" firstAttribute="centerX" secondItem="Rym-Jh-3Qe" secondAttribute="centerX" id="rs8-Ua-qw8"/>
                             <constraint firstItem="8t8-F5-dmd" firstAttribute="leading" secondItem="Ihf-7f-3KH" secondAttribute="leading" id="xKy-kb-YnX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ihf-7f-3KH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movie" id="YvD-n0-iaD"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="hvt-0o-6lK" id="pfD-kx-osQ"/>
                         <outlet property="mainContentView" destination="8t8-F5-dmd" id="aah-Bo-FDl"/>
                         <outlet property="movieListTableView" destination="bBx-H7-BJQ" id="EJo-AZ-3Ls"/>
+                        <outlet property="searchBar" destination="qFG-eY-4p3" id="cFX-Fo-laW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUw-jV-Pgi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

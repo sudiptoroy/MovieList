@@ -20,7 +20,9 @@ class MovieListTableViewCell: UITableViewCell {
     
     
     /// Update MovieListTableViewCell
-    func updateView () {
-        
+    func updateView (movie: Movie) {
+        movieImageView.downloaded(from: "\(IMAGE_BASE_URL)\(movie.poster_path)")
+        movieDescriptionTextView.text = movie.overview
+        movieTitleLabel.text = movie.title
     }
 }
