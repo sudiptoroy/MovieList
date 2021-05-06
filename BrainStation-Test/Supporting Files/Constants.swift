@@ -20,6 +20,9 @@ typealias CompletionWithMessage = (_ Success: Bool, _ withMessage: String) -> ()
 /// Api base url
 let BASE_URL    = "https://api.themoviedb.org/3/search/"
 
+
+let IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original"
+
 /// Api key
 let API_KEY     = "38e61227f85671163c275f9bd95a8803"
 
