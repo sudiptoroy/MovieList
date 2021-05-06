@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		A34E64EC26442EC40065BB91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E64EB26442EC40065BB91 /* AppDelegate.swift */; };
 		A34E64EE26442EC40065BB91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E64ED26442EC40065BB91 /* SceneDelegate.swift */; };
-		A34E64F026442EC40065BB91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E64EF26442EC40065BB91 /* ViewController.swift */; };
 		A34E64F326442EC40065BB91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34E64F126442EC40065BB91 /* Main.storyboard */; };
 		A34E64F626442EC40065BB91 /* BrainStation_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A34E64F426442EC40065BB91 /* BrainStation_Test.xcdatamodeld */; };
 		A34E64F826442EC90065BB91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34E64F726442EC90065BB91 /* Assets.xcassets */; };
 		A34E64FB26442EC90065BB91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34E64F926442EC90065BB91 /* LaunchScreen.storyboard */; };
 		A34E650626442EC90065BB91 /* BrainStation_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E650526442EC90065BB91 /* BrainStation_TestTests.swift */; };
 		A34E651126442ECA0065BB91 /* BrainStation_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E651026442ECA0065BB91 /* BrainStation_TestUITests.swift */; };
+		A34E65292644311A0065BB91 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E65282644311A0065BB91 /* HomeViewController.swift */; };
+		A34E652B2644313C0065BB91 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34E652A2644313C0065BB91 /* Default-568h@2x.png */; };
+		A34E652D264438E10065BB91 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E652C264438E10065BB91 /* MovieListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A34E64E826442EC40065BB91 /* BrainStation-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BrainStation-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34E64E826442EC40065BB91 /* MovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34E64EB26442EC40065BB91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A34E64ED26442EC40065BB91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A34E64EF26442EC40065BB91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A34E64F226442EC40065BB91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A34E64F526442EC40065BB91 /* BrainStation_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrainStation_Test.xcdatamodel; sourceTree = "<group>"; };
 		A34E64F726442EC90065BB91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		A34E650C26442EC90065BB91 /* BrainStation-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BrainStation-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34E651026442ECA0065BB91 /* BrainStation_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainStation_TestUITests.swift; sourceTree = "<group>"; };
 		A34E651226442ECA0065BB91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34E65282644311A0065BB91 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A34E652A2644313C0065BB91 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A34E652C264438E10065BB91 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		A34E64DF26442EC40065BB91 = {
 			isa = PBXGroup;
 			children = (
+				A34E652A2644313C0065BB91 /* Default-568h@2x.png */,
 				A34E64EA26442EC40065BB91 /* BrainStation-Test */,
 				A34E650426442EC90065BB91 /* BrainStation-TestTests */,
 				A34E650F26442ECA0065BB91 /* BrainStation-TestUITests */,
@@ -91,7 +96,7 @@
 		A34E64E926442EC40065BB91 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A34E64E826442EC40065BB91 /* BrainStation-Test.app */,
+				A34E64E826442EC40065BB91 /* MovieList.app */,
 				A34E650126442EC90065BB91 /* BrainStation-TestTests.xctest */,
 				A34E650C26442EC90065BB91 /* BrainStation-TestUITests.xctest */,
 			);
@@ -103,11 +108,14 @@
 			children = (
 				A34E64EB26442EC40065BB91 /* AppDelegate.swift */,
 				A34E64ED26442EC40065BB91 /* SceneDelegate.swift */,
-				A34E64EF26442EC40065BB91 /* ViewController.swift */,
-				A34E64F126442EC40065BB91 /* Main.storyboard */,
+				A34E651E26442F5D0065BB91 /* Services */,
+				A34E651F26442F6C0065BB91 /* Helpers */,
+				A34E652226442F860065BB91 /* Models */,
+				A34E652126442F7D0065BB91 /* Views */,
+				A34E652026442F740065BB91 /* Controllers */,
+				A34E652426442FBB0065BB91 /* Resources */,
+				A34E652326442F8F0065BB91 /* Supporting Files */,
 				A34E64F726442EC90065BB91 /* Assets.xcassets */,
-				A34E64F926442EC90065BB91 /* LaunchScreen.storyboard */,
-				A34E64FC26442EC90065BB91 /* Info.plist */,
 				A34E64F426442EC40065BB91 /* BrainStation_Test.xcdatamodeld */,
 			);
 			path = "BrainStation-Test";
@@ -131,6 +139,76 @@
 			path = "BrainStation-TestUITests";
 			sourceTree = "<group>";
 		};
+		A34E651E26442F5D0065BB91 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A34E651F26442F6C0065BB91 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A34E652026442F740065BB91 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A34E65282644311A0065BB91 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A34E652126442F7D0065BB91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A34E652626442FDF0065BB91 /* TableViewCells */,
+				A34E652526442FD50065BB91 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A34E652226442F860065BB91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A34E652326442F8F0065BB91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A34E64FC26442EC90065BB91 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A34E652426442FBB0065BB91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A34E652526442FD50065BB91 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A34E64F926442EC90065BB91 /* LaunchScreen.storyboard */,
+				A34E64F126442EC40065BB91 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A34E652626442FDF0065BB91 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A34E652C264438E10065BB91 /* MovieListTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,7 +226,7 @@
 			);
 			name = "BrainStation-Test";
 			productName = "BrainStation-Test";
-			productReference = A34E64E826442EC40065BB91 /* BrainStation-Test.app */;
+			productReference = A34E64E826442EC40065BB91 /* MovieList.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A34E650026442EC90065BB91 /* BrainStation-TestTests */ = {
@@ -236,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A34E64FB26442EC90065BB91 /* LaunchScreen.storyboard in Resources */,
+				A34E652B2644313C0065BB91 /* Default-568h@2x.png in Resources */,
 				A34E64F826442EC90065BB91 /* Assets.xcassets in Resources */,
 				A34E64F326442EC40065BB91 /* Main.storyboard in Resources */,
 			);
@@ -262,10 +341,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A34E64F026442EC40065BB91 /* ViewController.swift in Sources */,
 				A34E64EC26442EC40065BB91 /* AppDelegate.swift in Sources */,
 				A34E64EE26442EC40065BB91 /* SceneDelegate.swift in Sources */,
 				A34E64F626442EC40065BB91 /* BrainStation_Test.xcdatamodeld in Sources */,
+				A34E652D264438E10065BB91 /* MovieListTableViewCell.swift in Sources */,
+				A34E65292644311A0065BB91 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,13 +520,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TPN72W48U;
-				INFOPLIST_FILE = "BrainStation-Test/Info.plist";
+				INFOPLIST_FILE = "BrainStation-Test/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codex.BrainStation-Test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MovieList;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,13 +539,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TPN72W48U;
-				INFOPLIST_FILE = "BrainStation-Test/Info.plist";
+				INFOPLIST_FILE = "BrainStation-Test/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codex.BrainStation-Test";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MovieList;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
