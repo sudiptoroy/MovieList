@@ -40,9 +40,14 @@ final class NetworkService {
         print("\nGet Movies api - ",#function)
         
         
-        let urlString = "\(MovieDBApis.getMovies)?api_key=\(API_KEY)&query=\(query)"
+        var urlString = "\(MovieDBApis.getMovies)"
         
-        print("URLString: \(urlString)")
+        let parameters: [String : String] = [
+            "api_key"   : API_KEY,
+            "query"     : query
+        ]
+        
+        urlString += buildQueryString(fromDictionary: parameters)
         
         guard let url = URL(string: urlString) else {
             print("Failed to unwrap url")
@@ -109,5 +114,22 @@ final class NetworkService {
                 completion(false, "Error \(error!)")
             }
         }.resume()
+    }
+    
+    
+    
+    
+    /// Build query string
+    private func buildQueryString(fromDictionary parameters: [String:String]) -> String {
+        var urlVars:[String] = []
+        
+        for (k, value) in parameters {
+            let value = value as NSString
+            if let encodedValue = value.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) {
+                urlVars.append(k + "=" + encodedValue)
+            }
+        }
+
+        return urlVars.isEmpty ? "" : "?" + urlVars.joined(separator: "&")
     }
 }
