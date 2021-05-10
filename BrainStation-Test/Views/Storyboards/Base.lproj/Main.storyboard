@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Movie-->
+        <!--Movie List-->
         <scene sceneID="lAj-Hv-VFo">
             <objects>
                 <viewController id="1Ep-PI-sia" customClass="HomeViewController" customModule="MovieList" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,7 +56,7 @@
                                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Movie Description" translatesAutoresizingMaskIntoConstraints="NO" id="M7W-PM-4i6">
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Movie Description" translatesAutoresizingMaskIntoConstraints="NO" id="M7W-PM-4i6">
                                                                     <rect key="frame" x="108" y="34" width="288" height="108"/>
                                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -130,7 +130,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ihf-7f-3KH"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Movie" id="YvD-n0-iaD"/>
+                    <navigationItem key="navigationItem" title="Movie List" id="YvD-n0-iaD"/>
                     <connections>
                         <outlet property="activityIndicator" destination="hvt-0o-6lK" id="pfD-kx-osQ"/>
                         <outlet property="mainContentView" destination="8t8-F5-dmd" id="aah-Bo-FDl"/>
