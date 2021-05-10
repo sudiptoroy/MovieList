@@ -16,7 +16,7 @@ class MovieListTableViewCell: UITableViewCell {
     // MARK: Outlets
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var movieDescriptionTextView: UITextView!
-    @IBOutlet weak var movieImageView: UIImageView!
+    @IBOutlet weak var movieImageView: LoadImageView!
     
     
     /// Update MovieListTableViewCell
